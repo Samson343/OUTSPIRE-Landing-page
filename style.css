@@ -1,13 +1,45 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 img {
-    margin-top: 13vh;
+    margin-top: 8vh;
     position:absolute;
-    margin-left: 12vw;
+    margin-left: 13vw;
     border-radius: 1.5%;
 }
+.afterClass:hover {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+.afterClass {
+    opacity: 100%;
+    animation: fadeInmountain 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInmountain {
+    0%
+  {
+    opacity: 65%;
+  }
+    100%
+  {
+    opacity: 100%;
+  }
+  }
+  @keyframes fadeOut {
+    0%
+  {
+    opacity: 100%;
+  }
+    100%
+  {
+    opacity: 65%;
+  }
+  }
+
+
 .banner {
     position: relative;
     width: 100%;
@@ -22,13 +54,12 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 101%;
     object-fit: cover;
 }
 .banner h2 {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     font-size: 25vh;
@@ -39,19 +70,31 @@ img {
     /* font-weight: 700; */
     /* line-height: 100vh; */
     mix-blend-mode: screen;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .banner h2 {
     /* a few different options with dramatic effects on the final animation */
     /* background: #e2d9d9;  */
-    background: #fff;
-    /* background: rgb(219, 216, 216, 0.7); */
+    background: #ffffff;
+    /* background: rgb(219, 216, 216); */
 }
 
 .fadeIn{
     opacity: 0%;
     animation: fadeIn 7s 0.3s;
     animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0%
+{
+  opacity: 0;
+}
+  100%
+{
+  opacity: 1;
+}
 }
 .fadeIn2{
     opacity: 0%;
@@ -74,12 +117,12 @@ footer {
 
 :root{
     /* color type A */
-/*     --line_color : #555555 ;
+    /* --line_color : #555555 ;
     --back_color : #FFECF6  ; */
 
     /* color type B */
     /* --line_color : rgba(28, 58, 34, 0.916) ; */
-    --line_color : rgba(35, 57, 64, 0.916) ;
+    --line_color : rgba(53, 86, 96, 0.916) ;
     --back_color : #E9ECFF  ;
 
     /* color type C */
@@ -87,8 +130,8 @@ footer {
     --back_color : #DEFFFA  ; */
 }
 .container {
-    margin-top: 13vh;
-    margin-right: 9vw;
+    margin-top: 8vh;
+    margin-right: 11.3vw;
 }
 .button{
     position : fixed ;
