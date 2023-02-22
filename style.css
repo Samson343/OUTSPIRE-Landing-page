@@ -31,9 +31,6 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: #fff; */
-    /* background: #e2d9d9; */
-    background: rgb(219, 216, 216, 0.5);
     font-size: 25vh;
     text-align: center;
     text-transform: uppercase;
@@ -43,9 +40,17 @@ img {
     /* line-height: 100vh; */
     mix-blend-mode: screen;
 }
+
+.banner h2 {
+    /* a few different options with dramatic effects on the final animation */
+    /* background: #e2d9d9;  */
+    background: #fff;
+    /* background: rgb(219, 216, 216, 0.7); */
+}
+
 .fadeIn{
     opacity: 0%;
-    animation: fadeIn 6s 0.3s;
+    animation: fadeIn 7s 0.3s;
     animation-fill-mode: forwards;
 }
 .fadeIn2{
